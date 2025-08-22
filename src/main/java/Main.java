@@ -24,11 +24,8 @@ public class Main {
         y.ladoC = sc.nextDouble();
 
         //CALCULAR A ÁREA DO TRINGULO
-        double p =(x.ladoA+x.ladoB+x.ladoC)/2.0;
-        double areaX = Math.sqrt(p*(p-x.ladoA)-(p-x.ladoB)-(p-x.ladoC));
-
-        p =(y.ladoA+y.ladoB+y.ladoC)/2.0;
-        double areaY = Math.sqrt(p*(p-y.ladoA)-(p-y.ladoB)-(p-y.ladoC));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("Triangle X area: %.4f%n",areaX);
         System.out.printf("Triangle Y area: %.4f%n",areaY);
